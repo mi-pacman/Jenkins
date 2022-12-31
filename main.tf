@@ -1,3 +1,15 @@
+terraform {
+  required_providers {
+    libvirt = {
+      source = "dmacvicar/libvirt"
+    }
+  }
+}
+
+provider "libvirt" {
+  uri = "qemu:///system" 
+}
+
 resource "libvirt_pool" "jenkins-slave-pool" {
   name = "jenkins-slave-pool"
   type = "dir"
