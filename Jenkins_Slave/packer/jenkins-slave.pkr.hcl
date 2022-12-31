@@ -92,8 +92,8 @@ build {
   }
 
   provisioner "ansible-local" {
-    playbook_dir  = "packer/ansible"
-    playbook_file = "packer/ansible/playbook.yml"
+    playbook_dir  = "Jenkins_Slave/packer/ansible"
+    playbook_file = "playbook.yml"
   }
 
   provisioner "shell" {
