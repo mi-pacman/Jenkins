@@ -8,7 +8,7 @@ pipeline {
         #!/bin/bash
         pwd
         ls
-        packer build Jenkins_Slave/packer/jenkins-slave.pkr.hcl
+        packer build jenkins-slave.pkr.hcl
         """
       }
     }
