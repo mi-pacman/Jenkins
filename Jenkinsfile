@@ -14,7 +14,7 @@ pipeline {
       steps {
         sh """
         #!/bin/bash
-        ls packer/artifacts/qemu
+        ls packer/artifacts
         """
       }
     }
