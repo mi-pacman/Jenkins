@@ -1,3 +1,9 @@
+variable "config_file" {
+  type    = string
+  default = "jammy"
+}
+
+
 variable "cpu" {
   type    = string
   default = "2"
