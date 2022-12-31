@@ -6,9 +6,7 @@ pipeline {
       steps {
         sh """
         #!/bin/bash
-        pwd
-        ls
-        packer build Jenkins_Slave/jenkins-slave.pkr.hcl
+        packer build jenkins-slave.pkr.hcl
         """
       }
     }
